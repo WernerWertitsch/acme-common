@@ -2,7 +2,7 @@ package corp.acme.common.domain;
 
 import java.math.BigDecimal;
 
-public class ProductRequest extends BaseEntity {
+public class ProductRequest {
     Classification classification;
     BigDecimal value;
 
