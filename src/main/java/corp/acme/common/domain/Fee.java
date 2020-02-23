@@ -2,7 +2,7 @@ package corp.acme.common.domain;
 
 import java.math.BigDecimal;
 
-public class Fee {
+public class Fee extends BaseEntity  {
     Category category;
     BigDecimal ceiling;
     Double feePrct;

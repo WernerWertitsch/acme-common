@@ -2,16 +2,16 @@ package corp.acme.common.domain;
 
 import java.math.BigDecimal;
 
-public class ProductRequest {
-    String categoryId;
+public class ProductRequest extends BaseEntity {
+    Classification classification;
     BigDecimal value;
 
-    public String getCategoryId() {
-        return categoryId;
+    public Classification getClassification() {
+        return classification;
     }
 
-    public void setCategoryId(String categoryId) {
-        this.categoryId = categoryId;
+    public void setClassification(Classification classification) {
+        this.classification = classification;
     }
 
     public BigDecimal getValue() {

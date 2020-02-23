@@ -1,17 +1,11 @@
 package corp.acme.common.domain;
 
-public class Classification {
-    String id;
+public class Classification extends BaseEntity {
     String name;
     Category category;
 
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
+    public Classification() {
+        this.id = Util.createUUID();
     }
 
     public String getName() {

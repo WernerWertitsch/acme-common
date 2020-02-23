@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Currency;
 import java.util.Date;
 
-public class Product {
+public class Product extends BaseEntity {
     Classification classification;
     Double feePrct;
     BigDecimal insuredValue;

@@ -19,4 +19,13 @@ public class ServiceCall {
                 .header(HttpHeaders.CONTENT_TYPE, MediaType.TEXT_PLAIN_VALUE);
         return spec;
     }
+
+    public static WebClient.RequestHeadersSpec buildDefaultJsonCall(URI uri, String service, Object object) {
+        WebClient.RequestHeadersSpec spec = WebClient.create()
+                .method(HttpMethod.POST)
+                .uri(uri.toString()+"/"+service)
+                .body(BodyInserters.fromValue(object))
+                .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE);
+        return spec;
+    }
 }
