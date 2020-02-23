@@ -30,4 +30,13 @@ public class Fee {
     public void setFeePrct(Double feePrct) {
         this.feePrct = feePrct;
     }
+
+    public Fee() {
+        super();
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Fee: UpperLimit: %s, Category: %s, Fee: %s", this.ceiling.toString(), this.category.name, this.feePrct);
+    }
 }
