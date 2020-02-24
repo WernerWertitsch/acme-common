@@ -11,6 +11,8 @@ public class Product extends BaseEntity {
     BigDecimal premium;
     Boolean cancelled;
     Date insuredFrom;
+    Boolean insured;
+    // Some link to the customner should be here obviously, but not implemented
 
     public Classification getClassification() {
         return classification;
@@ -58,5 +60,13 @@ public class Product extends BaseEntity {
 
     public void setInsuredFrom(Date insuredFrom) {
         this.insuredFrom = insuredFrom;
+    }
+
+    public Boolean getInsured() {
+        return insured;
+    }
+
+    public void setInsured(Boolean insured) {
+        this.insured = insured;
     }
 }
