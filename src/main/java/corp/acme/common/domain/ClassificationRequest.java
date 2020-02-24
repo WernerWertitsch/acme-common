@@ -1,13 +1,18 @@
 package corp.acme.common.domain;
 
+import java.util.List;
+
 public class ClassificationRequest {
-    String substanceName;
 
-    public String getSubstanceName() {
-        return substanceName;
+    List<String> substanceNames;
+
+    public List<String> getSubstanceNames() {
+        return substanceNames;
     }
 
-    public void setSubstanceName(String substanceName) {
-        this.substanceName = substanceName;
+    public void setSubstanceNames(List<String> substanceNames) {
+        this.substanceNames = substanceNames;
     }
+
+
 }
